@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Popup Box</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Heading...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quis corporis atque maxime aut nemo eveniet enim molestias aspernatur deserunt, cumque voluptas pariatur quia fugiat necessitatibus? Nihil blanditiis nemo laboriosam?</p>
+        </div>
+        <div class="toggleBtn"></div>
+    </div>
+
+    <script>
+
+        let toggleBtn = document.querySelector('.toggleBtn');
+        let container = document.querySelector('.container');
+        toggleBtn.onclick = function(){
+            container.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
